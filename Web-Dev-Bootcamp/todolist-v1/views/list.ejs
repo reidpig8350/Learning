@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <%- include("header") -%>
+    <div class="box" id="heading">
+        <h2 class="form"><%=pageTitle%></h2>
+    </div>
+
+    <ul class="todolist box">
+        <div class="item">
+            <% for (var i = 0; i < itemList.length; i++) { %>
+            <li class="item">
+                <input type="checkbox" name="" id="" class="checkbox">
+                <p><%= itemList[i] %></p>
+            </li>
+            <% } %>
+        </div>
+    </ul>
+    <form action="newItem" method="post">
+        <input type="text" name="title" placeholder="輸入標題" autofocus required>
+        <br>
+        <button type="submit" name="summitBtn" value=<%= pageLocation %>>+</button>
+    </form>
+
+    <%- include("footer") -%>
+</body>
+
+</html>

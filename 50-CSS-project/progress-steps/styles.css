@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yomogi', sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

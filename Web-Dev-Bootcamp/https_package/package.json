@@ -1,0 +1,15 @@
+{
+  "name": "https_package",
+  "version": "1.0.0",
+  "description": "https package",
+  "main": "https.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reid Chu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
